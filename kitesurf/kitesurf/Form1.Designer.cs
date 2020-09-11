@@ -38,19 +38,21 @@
             this.lblTxtVent = new System.Windows.Forms.Label();
             this.btnActualiser = new System.Windows.Forms.Button();
             this.tmrResertDonnee = new System.Windows.Forms.Timer(this.components);
+            this.label1 = new System.Windows.Forms.Label();
             this.SuspendLayout();
             // 
             // tbxPoids
             // 
-            this.tbxPoids.Location = new System.Drawing.Point(143, 241);
+            this.tbxPoids.Location = new System.Drawing.Point(12, 290);
             this.tbxPoids.Name = "tbxPoids";
-            this.tbxPoids.Size = new System.Drawing.Size(220, 20);
+            this.tbxPoids.ReadOnly = true;
+            this.tbxPoids.Size = new System.Drawing.Size(75, 20);
             this.tbxPoids.TabIndex = 0;
             // 
             // lblTxtPoids
             // 
             this.lblTxtPoids.AutoSize = true;
-            this.lblTxtPoids.Location = new System.Drawing.Point(12, 47);
+            this.lblTxtPoids.Location = new System.Drawing.Point(12, 19);
             this.lblTxtPoids.Name = "lblTxtPoids";
             this.lblTxtPoids.Size = new System.Drawing.Size(66, 13);
             this.lblTxtPoids.TabIndex = 1;
@@ -59,7 +61,7 @@
             // lblTxtAile
             // 
             this.lblTxtAile.AutoSize = true;
-            this.lblTxtAile.Location = new System.Drawing.Point(10, 95);
+            this.lblTxtAile.Location = new System.Drawing.Point(33, 114);
             this.lblTxtAile.Name = "lblTxtAile";
             this.lblTxtAile.Size = new System.Drawing.Size(150, 13);
             this.lblTxtAile.TabIndex = 2;
@@ -67,33 +69,34 @@
             // 
             // tbxAiles
             // 
-            this.tbxAiles.Location = new System.Drawing.Point(403, 95);
+            this.tbxAiles.Location = new System.Drawing.Point(426, 85);
             this.tbxAiles.Multiline = true;
             this.tbxAiles.Name = "tbxAiles";
             this.tbxAiles.ScrollBars = System.Windows.Forms.ScrollBars.Vertical;
-            this.tbxAiles.Size = new System.Drawing.Size(362, 140);
+            this.tbxAiles.Size = new System.Drawing.Size(362, 59);
             this.tbxAiles.TabIndex = 3;
             // 
             // tbxVent
             // 
-            this.tbxVent.Location = new System.Drawing.Point(263, 279);
+            this.tbxVent.Location = new System.Drawing.Point(52, 219);
             this.tbxVent.Name = "tbxVent";
             this.tbxVent.Size = new System.Drawing.Size(100, 20);
             this.tbxVent.TabIndex = 5;
             // 
             // lblTxtVent
             // 
-            this.lblTxtVent.Location = new System.Drawing.Point(0, 0);
+            this.lblTxtVent.Location = new System.Drawing.Point(12, 263);
             this.lblTxtVent.Name = "lblTxtVent";
-            this.lblTxtVent.Size = new System.Drawing.Size(100, 23);
+            this.lblTxtVent.Size = new System.Drawing.Size(100, 14);
             this.lblTxtVent.TabIndex = 6;
+            this.lblTxtVent.Text = "Vitesse Vent :";
             // 
             // btnActualiser
             // 
             this.btnActualiser.BackColor = System.Drawing.Color.SteelBlue;
             this.btnActualiser.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("btnActualiser.BackgroundImage")));
             this.btnActualiser.ForeColor = System.Drawing.Color.White;
-            this.btnActualiser.Location = new System.Drawing.Point(636, 26);
+            this.btnActualiser.Location = new System.Drawing.Point(659, 45);
             this.btnActualiser.Name = "btnActualiser";
             this.btnActualiser.Size = new System.Drawing.Size(129, 34);
             this.btnActualiser.TabIndex = 7;
@@ -106,11 +109,21 @@
             this.tmrResertDonnee.Enabled = true;
             this.tmrResertDonnee.Interval = 600000;
             // 
+            // label1
+            // 
+            this.label1.AutoSize = true;
+            this.label1.Location = new System.Drawing.Point(52, 187);
+            this.label1.Name = "label1";
+            this.label1.Size = new System.Drawing.Size(35, 13);
+            this.label1.TabIndex = 8;
+            this.label1.Text = "label1";
+            // 
             // Frm1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(800, 450);
+            this.Controls.Add(this.label1);
             this.Controls.Add(this.btnActualiser);
             this.Controls.Add(this.tbxVent);
             this.Controls.Add(this.lblTxtVent);
@@ -136,6 +149,7 @@
         private System.Windows.Forms.Label lblTxtVent;
         private System.Windows.Forms.Button btnActualiser;
         private System.Windows.Forms.Timer tmrResertDonnee;
+        private System.Windows.Forms.Label label1;
     }
 }
 

@@ -1,0 +1,6 @@
+C:\Users\karelSvbd\Desktop\github\kitsurf_svbd-frrrd3\kitesurf\kitesurf\obj\Release\kitesurf.csprojAssemblyReference.cache
+C:\Users\karelSvbd\Desktop\github\kitsurf_svbd-frrrd3\kitesurf\kitesurf\obj\Release\kitesurf.exe.config
+C:\Users\karelSvbd\Desktop\github\kitsurf_svbd-frrrd3\kitesurf\kitesurf\obj\Release\kitesurf.Frm1.resources
+C:\Users\karelSvbd\Desktop\github\kitsurf_svbd-frrrd3\kitesurf\kitesurf\obj\Release\kitesurf.Properties.Resources.resources
+C:\Users\karelSvbd\Desktop\github\kitsurf_svbd-frrrd3\kitesurf\kitesurf\obj\Release\kitesurf.csproj.GenerateResource.cache
+C:\Users\karelSvbd\Desktop\github\kitsurf_svbd-frrrd3\kitesurf\kitesurf\obj\Release\kitesurf.csproj.CoreCompileInputs.cache

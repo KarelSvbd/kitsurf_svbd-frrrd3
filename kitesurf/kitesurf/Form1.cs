@@ -98,8 +98,8 @@ namespace kitesurf
 
             debugOutput(strJSON);
 
-            string resultatRequette = strJSON;
-            DecodeurJson strconvert = new DecodeurJson();
+            string resultatRequete = strJSON;
+            Deserialiseur strconvert = new Deserialiseur(resultatRequete);
 
         }
 
