@@ -30,24 +30,25 @@
         {
             this.components = new System.ComponentModel.Container();
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Frm1));
-            this.tbxPoids = new System.Windows.Forms.TextBox();
+            this.tbxPoid = new System.Windows.Forms.TextBox();
             this.lblTxtPoids = new System.Windows.Forms.Label();
             this.lblTxtAile = new System.Windows.Forms.Label();
             this.tbxAiles = new System.Windows.Forms.TextBox();
-            this.tbxVent = new System.Windows.Forms.TextBox();
             this.lblTxtVent = new System.Windows.Forms.Label();
             this.btnActualiser = new System.Windows.Forms.Button();
             this.tmrResertDonnee = new System.Windows.Forms.Timer(this.components);
             this.label1 = new System.Windows.Forms.Label();
+            this.nudPoids = new System.Windows.Forms.NumericUpDown();
+            ((System.ComponentModel.ISupportInitialize)(this.nudPoids)).BeginInit();
             this.SuspendLayout();
             // 
-            // tbxPoids
+            // tbxPoid
             // 
-            this.tbxPoids.Location = new System.Drawing.Point(12, 290);
-            this.tbxPoids.Name = "tbxPoids";
-            this.tbxPoids.ReadOnly = true;
-            this.tbxPoids.Size = new System.Drawing.Size(75, 20);
-            this.tbxPoids.TabIndex = 0;
+            this.tbxPoid.Location = new System.Drawing.Point(12, 290);
+            this.tbxPoid.Name = "tbxPoid";
+            this.tbxPoid.ReadOnly = true;
+            this.tbxPoid.Size = new System.Drawing.Size(75, 20);
+            this.tbxPoid.TabIndex = 0;
             // 
             // lblTxtPoids
             // 
@@ -75,13 +76,6 @@
             this.tbxAiles.ScrollBars = System.Windows.Forms.ScrollBars.Vertical;
             this.tbxAiles.Size = new System.Drawing.Size(362, 59);
             this.tbxAiles.TabIndex = 3;
-            // 
-            // tbxVent
-            // 
-            this.tbxVent.Location = new System.Drawing.Point(52, 219);
-            this.tbxVent.Name = "tbxVent";
-            this.tbxVent.Size = new System.Drawing.Size(100, 20);
-            this.tbxVent.TabIndex = 5;
             // 
             // lblTxtVent
             // 
@@ -118,22 +112,32 @@
             this.label1.TabIndex = 8;
             this.label1.Text = "label1";
             // 
+            // nudPoids
+            // 
+            this.nudPoids.Location = new System.Drawing.Point(84, 19);
+            this.nudPoids.Name = "nudPoids";
+            this.nudPoids.Size = new System.Drawing.Size(120, 20);
+            this.nudPoids.TabIndex = 9;
+            this.nudPoids.ValueChanged += new System.EventHandler(this.numericUpDown1_ValueChanged);
+            this.nudPoids.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.nudPoids_KeyPress);
+            // 
             // Frm1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(800, 450);
+            this.Controls.Add(this.nudPoids);
             this.Controls.Add(this.label1);
             this.Controls.Add(this.btnActualiser);
-            this.Controls.Add(this.tbxVent);
             this.Controls.Add(this.lblTxtVent);
             this.Controls.Add(this.tbxAiles);
             this.Controls.Add(this.lblTxtAile);
             this.Controls.Add(this.lblTxtPoids);
-            this.Controls.Add(this.tbxPoids);
+            this.Controls.Add(this.tbxPoid);
             this.Name = "Frm1";
             this.Text = "KiteSurf";
             this.Load += new System.EventHandler(this.Frm1_Load);
+            ((System.ComponentModel.ISupportInitialize)(this.nudPoids)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -141,15 +145,15 @@
 
         #endregion
 
-        private System.Windows.Forms.TextBox tbxPoids;
+        private System.Windows.Forms.TextBox tbxPoid;
         private System.Windows.Forms.Label lblTxtPoids;
         private System.Windows.Forms.Label lblTxtAile;
         private System.Windows.Forms.TextBox tbxAiles;
-        private System.Windows.Forms.TextBox tbxVent;
         private System.Windows.Forms.Label lblTxtVent;
         private System.Windows.Forms.Button btnActualiser;
         private System.Windows.Forms.Timer tmrResertDonnee;
         private System.Windows.Forms.Label label1;
+        private System.Windows.Forms.NumericUpDown nudPoids;
     }
 }
 

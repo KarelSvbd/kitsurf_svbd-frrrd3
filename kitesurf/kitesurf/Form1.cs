@@ -99,7 +99,7 @@ namespace kitesurf
             debugOutput(strJSON);
 
             string resultatRequete = strJSON;
-            Deserialiseur strconvert = new Deserialiseur(resultatRequete);
+            //Deserialiseur strconvert = new Deserialiseur(resultatRequete);
 
         }
 
@@ -117,6 +117,36 @@ namespace kitesurf
                 System.Diagnostics.Debug.Write(ex.Message, ToString() + Environment.NewLine);
             }
         }
+
+        private void nudPoids_KeyPress(object sender, KeyPressEventArgs e)
+        {
+            //force à saisir uniquement des int
+            if (!char.IsControl(e.KeyChar) && !char.IsDigit(e.KeyChar) &&
+            (e.KeyChar != '.'))
+            {
+                e.Handled = true;
+            }
+
+            // only allow one decimal point
+            if ((e.KeyChar == '.') && ((sender as TextBox).Text.IndexOf('.') > -1))
+            {
+                e.Handled = true;
+            }
+        }
+
+        private void numericUpDown1_ValueChanged(object sender, EventArgs e)
+        {
+            
+                //test de la sésie du poids
+                int poids = Convert.ToInt32(nudPoids.Text);
+
+                if (poids > 300 || poids < 0)
+                {
+                    MessageBox.Show("Veuillez séléctionner un poids valide", "Mauvaise saisie", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                }
+            
+        }
+
         
     }
 }
